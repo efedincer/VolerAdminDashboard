@@ -1,7 +1,12 @@
+using VolerAdminDashboard.BussinessServices;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+//todo authservice registration
+//builder.Services.AddScoped<IAuthService, AuthService>();
 
 var app = builder.Build();
 
